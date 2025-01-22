@@ -20,7 +20,7 @@ const DiscordInvite: React.FC = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <DiscordLogo className="text-white w-6 h-6" />
+        <DiscordLogo className="text-white w-5 h-5" />
       </motion.div>
 
       <AnimatePresence>
@@ -33,7 +33,7 @@ const DiscordInvite: React.FC = () => {
               duration: 0.2,
               ease: [0.4, 0, 0.2, 1]
             }}
-            className="absolute left-[calc(100%+0.5rem)] top-1/2 transform -translate-y-1/2 w-64 bg-[#2f3136] rounded-lg shadow-xl z-10 overflow-hidden border border-[#1f2225]/50"
+            className="absolute left-[calc(100%-1.5rem)] mt-1 top-2/2 transform -translate-y-1/2 w-56 bg-[#2f3136] rounded-lg shadow-xl z-10 overflow-hidden border border-[#1f2225]/50"
           >
             <div className="relative">
               <div className="w-full h-16 bg-gradient-to-br from-[#5865F2] via-[#4752C4] to-[#454FBF]" />
@@ -45,10 +45,10 @@ const DiscordInvite: React.FC = () => {
             </div>
 
             <div className="p-4 pt-8">
-              <h3 className="font-bold text-lg text-white mb-1">Awesome Server</h3>
+              <h3 className="font-bold text-base text-white mb-1">Awesome Server</h3>
               <p className="text-xs text-[#b9bbbe] mb-2">Join the coolest Discord community!</p>
               <div className="flex items-center text-[#b9bbbe] text-xs mb-3">
-                <div className="flex items-center mr-3">
+                <div className="flex items-center mr-3 text-xs">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 mr-1"></div>
                   1,234 Online
                 </div>
